@@ -5,12 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 # Load the dataset
-df=pd.read_csv(r"C:\Users\ayush\OneDrive\Desktop\PythonCA2\Data.csv")
-
-###Objective 1: Identify constituencies with the highest and lowest number of candidates
-# Count candidates per constituency
-candidates_per_constituency = df.groupby('ac_name')['candidate_name'].nunique()
-# Find the highest and lowest
 highest_constituency = candidates_per_constituency.idxmax()
 lowest_constituency = candidates_per_constituency.idxmin()
 print(f"Constituency with highest candidates:{highest_constituency}({candidates_per_constituency.max()} candidates)")
