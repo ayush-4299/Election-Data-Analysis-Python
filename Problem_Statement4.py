@@ -9,7 +9,7 @@ df=pd.read_csv(r"C:\Users\ayush\OneDrive\Desktop\PythonCA2\Data.csv")
 ###Objective 1: Determine the average age of winning candidates per state
 # Convert age to 
 df['age'] = pd.to_numeric(df['age'], errors='coerce')
-# Get only winning candidates (position = 1) and calculate the average age per 
+# Get only winning candidates (position = 1) and calculate the average age 
 winning_candidates = df[df['position'] == 1]
 avg_winner_age_per_state = winning_candidates.groupby("state_name")["age"].mean()
 print(avg_winner_age_per_state)
