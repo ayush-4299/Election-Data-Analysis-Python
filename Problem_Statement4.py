@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df=pd.read_csv(r"C:\Users\ayush\OneDrive\Desktop\PythonCA2\Data.csv")
-###Objective 1: Determine the average age of winning candidates per state
+###Objective 1: Determine the average age of winning candidates per s
 # Convert age to 
 df['age'] = pd.to_numeric(df['age'], errors='coerce')
 # Get only winning candidates (position = 1) and calculate the average age 
