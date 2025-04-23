@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-# Load the dataset
+# Load the dat
 df=pd.read_csv(r"C:\Users\ayush\OneDrive\Desktop\PythonCA2\Data.csv")
 
 ###Objective 1: Find the number of unique elections (years and states) in the dataset
